@@ -1,0 +1,33 @@
+#title, #guess {
+	text-align: center;
+}
+
+.row {
+    min-height: 400px;
+    position: relative;
+  text-align: center;
+}
+
+.column {
+	width: 450px;
+  display: inline-block;
+  padding: 20px;
+  border:2px solid blue;
+}
+
+input {
+  width: 220px;
+  height: 70px;
+  display: block;
+  font-size: 30px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#textBtn:hover {
+	cursor: pointer;
+}
+
+#answer, #lives {
+	font-size: 50px;
+}

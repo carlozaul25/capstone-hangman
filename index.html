@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>HangMan Project</title>
+	<link rel="stylesheet" type="text/css" href="index.css">
+</head>
+<body onload ="startUp()">
+
+	
+	<h1 id='title'> Hangman</h1>
+
+<div class='row'>
+		<div class='column'>
+	<input type="text" maxlength='1' id='letter' align="middle" placeholder="Guess a letter">
+	<input type="submit" id='textBtn' align="middle" value='search letter' onClick='showLetters()'/>
+	<p id='answer'></p>
+		</div>
+
+	<p id='lives'></p>
+	<h2 id='youLose'></h2>
+	<h2 id='youWin'></h2>
+</div>
+
+
+
+
+
+
+<script type="text/javascript" src='index.js'></script>
+</body>
+</html>
