@@ -1,6 +1,4 @@
 var randomWordArr = ["microwave", "oven", "refrigerator"];
- var randomWord;
-
 var ans;
 var lives = 0;
 var answerArray = [];

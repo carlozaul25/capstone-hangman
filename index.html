@@ -7,11 +7,12 @@
 <body onload ="startUp()">
 
 	
-	<h1 id='title'> Hangman</h1>
+	<h1 id='title'>Los Hangman Game</h1>
 
 <div class='row'>
 		<div class='column'>
-	<input type="text" maxlength='1' id='letter' align="middle" placeholder="Guess a letter">
+	<input type="text" maxlength='1' id='letter' placeholder="Guess a letter">
+
 	<input type="submit" id='textBtn' align="middle" value='search letter' onClick='showLetters()'/>
 	<p id='answer'></p>
 		</div>
@@ -19,6 +20,8 @@
 	<p id='lives'></p>
 	<h2 id='youLose'></h2>
 	<h2 id='youWin'></h2>
+	<button id='hintbtn' onclick="">Hint</button>
+	<h3 id='hint'></h3>
 </div>
 
 
