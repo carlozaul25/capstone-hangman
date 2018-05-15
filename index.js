@@ -4,13 +4,15 @@ var lives = 0;
 var answerArray = [];
 var found = 0;
 var img = document.getElementById('img');
+var win = document.getElementById('Youwin');
+var textWin = document.getElementById('textWin');
  
 
 function startUp() {
 	randomWord = randomWordArr[Math.floor(Math.random() * randomWordArr.length)];
 
-	for (var i = 0; i < randomWord.length; i++)
-	{
+	for (var i = 0; i < randomWord.length; i++) {
+												
 		answerArray[i]= "_"
 	}
 
@@ -24,16 +26,13 @@ function showLetters() {
 
 	var letter = document.getElementById("letter").value;
 	if (letter.length > 0 ) {
-	
 		for (var i = 0; i < randomWord.length; i++) {
-
 			if (randomWord[i] == letter) {
 				answerArray[i] = letter;
 				document.getElementById("answer").innerHTML = answerArray.join(" ");
 				found = 1
 			}
 		}
-		
 
 		if (found === 0) {
 				lives++
@@ -45,15 +44,15 @@ function showLetters() {
 		document.getElementById("youLose").innerHTML = "You Lose! Try again?";
 		lives = 0;
 		startUp()
-
 		}
-
 		
 		found = 0;
 
 		if (answerArray.indexOf("_") == -1) {
-			document.getElementById('youWin').innerHTML="You Win!";
+			document.getElementById('textWin').innerHTML="You Win!";
 			img.style.display='inline-block';
+			textWin.style.fontSize='60px';
+			textWin.style.color='blue';
 
 		} 
 	}
