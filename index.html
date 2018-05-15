@@ -4,13 +4,13 @@
 	<title>HangMan Project</title>
 	<link rel="stylesheet" type="text/css" href="index.css">
 </head>
-<body onload ="startUp()">
+<body onload ="startUp()" id='body'>
 
 	
 	<h1 id='title'>Los Hangman Game</h1>
 
 <div class='row'>
-		<div class='column'>
+		<div id='column'>
 	<input type="text" maxlength='1' id='letter' placeholder="Guess a letter">
 
 	<input type="submit" id='textBtn' align="middle" value='search letter' onClick='showLetters()'/>
@@ -19,7 +19,8 @@
 
 	<p id='livesText'></p>
 	<h2 id='youLose'></h2>
-	<img id="blackThumb" src="wrong.jpg">
+	<!-- <img id="blackThumb" src="wrong.jpg" height="15%" width="15%"> -->
+	<img id="redWrong" src="redwrong.jpg">
 	<div id='youWin'></div>
 	<h2 id='textWin'></h2>
 	<img id ='img' src='thumbs.jpg'></img>

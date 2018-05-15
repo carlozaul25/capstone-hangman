@@ -8,8 +8,8 @@
   text-align: center;
 }
 
-.column {
-	width: 450px;
+#column {
+	width: 650px;
   display: inline-block;
   padding: 20px;
   border:2px solid blue;
@@ -32,6 +32,6 @@ input {
 	font-size: 50px;
 }
 
-#img ,#blackThumb{
+#img ,#redWrong{
   display: none;
 }

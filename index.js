@@ -4,13 +4,14 @@ var lives = 0;
 var answerArray = [];
 var found = 0;
 var img = document.getElementById('img');
-var blackThumb = document.getElementById('blackThumb');
+var redWrong = document.getElementById('redWrong');
 var win = document.getElementById('Youwin');
 var textWin = document.getElementById('textWin');
 var answer = document.getElementById("answer");
 var livesText=document.getElementById('livesText');
 var youLose = document.getElementById('youLose');
-// document.getElementById("answer").innerHTML = answerArray.join(" ");
+var body = document.getElementById('body');
+var column= document.getElementById('column');
  
 
 function startUp() {
@@ -34,17 +35,21 @@ function showLetters() {
 		}
 			if (found === 0) {
 				lives++
-			livesText.innerHTML = "Number of lives left out of 4: " + lives;
-			img.style.backgroundRepeat='repeat-x';
-			img.style.display='inline-block';
+			livesText.innerHTML = "Number of lives 4: " + lives;
 		}
 			if (lives > 3 ) {				
 				youLose.innerHTML = "You Lose! Try again?";
+				body.style.backgroundImage='url(redwrong.jpg)';
+				body.style.backgroundRepeat='no-repeat'
+				redWrong.style.display='inline-block';
+
+
 		lives = 0;
 	}
 			found = 0;
 			if (answerArray.indexOf("_") == -1) {
-				textWin.innerHTML="You Win!";
+				column.style.backgroundImage='url(colors.gif)';
+				column.style.backgroundRepeat='no-repeat';
 				img.style.display='inline-block';
 				textWin.style.fontSize='60px';
 				textWin.style.color='blue';
