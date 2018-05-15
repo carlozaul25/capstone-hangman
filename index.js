@@ -36,8 +36,11 @@ function showLetters() {
 			if (found === 0) {
 				lives++
 			livesText.innerHTML = "Number of lives 4: " + lives;
+			livesText.style.fontSize= '20px';
+			livesText.style.color= 'red';
 		}
-			if (lives > 3 ) {				
+			if (lives > 3 ) {	
+				column.style.display= 'none';			
 				youLose.innerHTML = "You Lose! Try again?";
 				body.style.backgroundImage='url(redwrong.jpg)';
 				body.style.backgroundRepeat='no-repeat'
