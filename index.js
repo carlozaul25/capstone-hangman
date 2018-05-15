@@ -19,8 +19,8 @@ function startUp() {
 	for (var i = 0; i < randomWord.length; i++) {
 			answerArray[i]= "_"
 	}
-		ans = answerArray.join(" ");
-		answer.innerHTML = ans;
+		var ans = answerArray.join(" ");
+		var answer.innerHTML = ans;
 }
 
 function showLetters() {
@@ -42,7 +42,7 @@ function showLetters() {
 			if (lives > 3 ) {	
 				column.style.display= 'none';			
 				youLose.innerHTML = "You Lose! Try again?";
-				body.style.backgroundImage='url(redwrong.jpg)';
+				body.style.backgroundImage='url(images/redwrong.jpg)';
 				body.style.backgroundRepeat='no-repeat'
 				redWrong.style.display='inline-block';
 
@@ -51,7 +51,7 @@ function showLetters() {
 	}
 			found = 0;
 			if (answerArray.indexOf("_") == -1) {
-				column.style.backgroundImage='url(colors.gif)';
+				column.style.backgroundImage='url(images/colors.gif)';
 				column.style.backgroundRepeat='no-repeat';
 				img.style.display='inline-block';
 				textWin.style.fontSize='60px';
