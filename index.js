@@ -3,6 +3,7 @@ var ans;
 var lives = 0;
 var answerArray = [];
 var found = 0;
+var img = document.getElementById('img');
  
 
 function startUp() {
@@ -32,6 +33,8 @@ function showLetters() {
 				found = 1
 			}
 		}
+		
+
 		if (found === 0) {
 				lives++
 			document.getElementById("lives").innerHTML = "Number of lives left out of 4: " + lives;
@@ -49,8 +52,10 @@ function showLetters() {
 		found = 0;
 
 		if (answerArray.indexOf("_") == -1) {
-			document.getElementById('youWin').innerHTML= 'YOU WIN!';
-		}
+			document.getElementById('youWin').innerHTML="You Win!";
+			img.style.display='inline-block';
+
+		} 
 	}
 }
 	
