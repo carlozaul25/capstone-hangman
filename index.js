@@ -1,4 +1,6 @@
-var randomWordArr = ["microwave", "oven", "refrigerator"];
+var randomWordArr = ["javascript", "football", "helicopter"];
+randomWord = randomWordArr[Math.floor(Math.random() * randomWordArr.length)];
+var clue = document.getElementById('hint');
 var ans;
 var lives = 0;
 var answerArray = [];
@@ -12,7 +14,7 @@ var livesText=document.getElementById('livesText');
 var youLose = document.getElementById('youLose');
 var body = document.getElementById('body');
 var column= document.getElementById('column');
- 
+
 
 function startUp() {
 	randomWord = randomWordArr[Math.floor(Math.random() * randomWordArr.length)];
@@ -20,10 +22,14 @@ function startUp() {
 			answerArray[i]= "_"
 	}
 		var ans = answerArray.join(" ");
-		var answer.innerHTML = ans;
+		 answer.innerHTML = ans;
+
 }
 
+
 function showLetters() {
+	
+ 			
 	var letter = document.getElementById("letter").value;
 	if (letter.length > 0 ) {
 		for (var i = 0; i < randomWord.length; i++) {
@@ -60,8 +66,7 @@ function showLetters() {
 	}
 }
 	
-	
-
+			
 
 	
 	

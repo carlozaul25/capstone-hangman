@@ -1,3 +1,6 @@
+body {
+  background-color:#9c88ff;
+}
 #title, #guess {
 	text-align: center;
 }
